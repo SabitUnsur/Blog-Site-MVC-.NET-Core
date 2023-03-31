@@ -1,0 +1,12 @@
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\bin\Debug\net6.0\EntityLayer.deps.json
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\bin\Debug\net6.0\EntityLayer.dll
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\bin\Debug\net6.0\EntityLayer.pdb
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfoInputs.cache
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\EntityLayer.AssemblyInfo.cs
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\EntityLayer.dll
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\refint\EntityLayer.dll
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\EntityLayer.pdb
+C:\Users\sabit\source\repos\WebApplication1\EntityLayer\obj\Debug\net6.0\ref\EntityLayer.dll

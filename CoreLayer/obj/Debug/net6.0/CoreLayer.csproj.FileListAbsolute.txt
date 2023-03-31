@@ -1,0 +1,12 @@
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\bin\Debug\net6.0\CoreLayer.deps.json
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\bin\Debug\net6.0\CoreLayer.pdb
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.AssemblyReference.cache
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\CoreLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfoInputs.cache
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\CoreLayer.AssemblyInfo.cs
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\CoreLayer.csproj.CoreCompileInputs.cache
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\CoreLayer.dll
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\refint\CoreLayer.dll
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\CoreLayer.pdb
+C:\Users\sabit\source\repos\WebApplication1\CoreLayer\obj\Debug\net6.0\ref\CoreLayer.dll
