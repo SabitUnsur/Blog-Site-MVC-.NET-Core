@@ -201,6 +201,10 @@ namespace DataAccessLayer.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("WriterID"));
 
+                    b.Property<string>("ConfirmWriterPassword")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("WriterAbout")
                         .IsRequired()
                         .HasColumnType("text");

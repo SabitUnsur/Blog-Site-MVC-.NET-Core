@@ -272,3 +272,9 @@ C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\run
 C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\sabit\source\repos\WebApplication1\WebApplication1\obj\Debug\net6.0\WebApplication1.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\CoreLayer.dll
+C:\Users\sabit\source\repos\WebApplication1\WebApplication1\bin\Debug\net6.0\CoreLayer.pdb

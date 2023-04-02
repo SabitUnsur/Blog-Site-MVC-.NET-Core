@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "WYZ94K6QiA+oopYLjRRfTHVgEx5VE38lYVK7+4bfPmrnWXwUMxapZM7kX5BmmJ1XOrnMEVisuwFL8/gxujDQUg==",
+  "dgSpecHash": "M0TTi06704FC4g0LuEoJ5B3bWQXpqCIblYtVJh/qqydDBw7VYjjiJsIhDsJldNYfFkMXchSPDI6QCQBd5tTAkw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\BusinessLayer\\BusinessLayer.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.4\\microsoft.entityframeworkcore.7.0.4.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.4\\microsoft.entityframeworkcore.abstractions.7.0.4.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.4\\microsoft.entityframeworkcore.analyzers.7.0.4.nupkg.sha512",

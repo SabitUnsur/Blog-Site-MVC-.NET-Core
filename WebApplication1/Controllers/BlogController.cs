@@ -16,7 +16,8 @@ namespace WebApplication1.Controllers
         public IActionResult BlogReadAll(int BlogId)
 		{
 			var values=blogManager.GetBlogByID(BlogId);
-			return View(values);
+            ViewBag.blogID = BlogId;
+            return View(values);
 		}
     }
 }

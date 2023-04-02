@@ -6,7 +6,7 @@ namespace WebApplication1.Controllers
 {
     public class CommentController : Controller
     {
-        CommentManager commentManager=new CommentManager(new EfCommentRepository());
+       // CommentManager commentManager=new CommentManager(new EfCommentRepository());
         public IActionResult Index()
         {
             return View();

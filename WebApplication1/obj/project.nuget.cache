@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "aLs9CkpL4xI8isngYaxRT1Ia6/zAY2xJtMkcD7/XOM+hxVTH5vqWxH7hiAc/NuFxiETU2kqVsuFgHGTxlur5Lw==",
+  "dgSpecHash": "gvpkQZ2rLzJlzBTM4EIbhHd6AUHcx7wBT04gYJJPS0sPn8JCRmNQCMGq0N8/dHVZfUPHD/n92FTm+DgvDUkhSw==",
   "success": true,
   "projectFilePath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
+    "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.5.1\\fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
