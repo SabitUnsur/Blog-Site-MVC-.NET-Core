@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class deneme : Migration
+    public partial class last_updates : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -74,6 +74,7 @@ namespace DataAccessLayer.Migrations
                     WriterImage = table.Column<string>(type: "text", nullable: false),
                     WriterMail = table.Column<string>(type: "text", nullable: false),
                     WriterPassword = table.Column<string>(type: "text", nullable: false),
+                    ConfirmWriterPassword = table.Column<string>(type: "text", nullable: false),
                     WriterStatus = table.Column<bool>(type: "boolean", nullable: false)
                 },
                 constraints: table =>
@@ -93,7 +94,8 @@ namespace DataAccessLayer.Migrations
                     BlogImage = table.Column<string>(type: "text", nullable: false),
                     BlogCreateDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
                     BlogStatus = table.Column<bool>(type: "boolean", nullable: false),
-                    CategoryID = table.Column<int>(type: "integer", nullable: false)
+                    CategoryID = table.Column<int>(type: "integer", nullable: false),
+                    WriterID = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -103,6 +105,12 @@ namespace DataAccessLayer.Migrations
                         column: x => x.CategoryID,
                         principalTable: "Categories",
                         principalColumn: "CategoryID",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Blogs_Writers_WriterID",
+                        column: x => x.WriterID,
+                        principalTable: "Writers",
+                        principalColumn: "WriterID",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -136,6 +144,11 @@ namespace DataAccessLayer.Migrations
                 column: "CategoryID");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Blogs_WriterID",
+                table: "Blogs",
+                column: "WriterID");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Comments_BlogID",
                 table: "Comments",
                 column: "BlogID");
@@ -154,13 +167,13 @@ namespace DataAccessLayer.Migrations
                 name: "Contacts");
 
             migrationBuilder.DropTable(
-                name: "Writers");
-
-            migrationBuilder.DropTable(
                 name: "Blogs");
 
             migrationBuilder.DropTable(
                 name: "Categories");
+
+            migrationBuilder.DropTable(
+                name: "Writers");
         }
     }
 }

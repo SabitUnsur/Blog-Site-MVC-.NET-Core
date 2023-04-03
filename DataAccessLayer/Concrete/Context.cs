@@ -17,10 +17,11 @@ namespace DataAccessLayer.Concrete
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Writer> Writers { get; set; }
+        public DbSet<NewsLetter> NewsLetters { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Database=BlogDB;Username=postgres;Password=123");
+            optionsBuilder.UseNpgsql("Host=localhost;Database=CoreBlogDB;Username=postgres;Password=123");
         }
 
 

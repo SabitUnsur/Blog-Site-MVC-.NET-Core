@@ -27,7 +27,7 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
 app.UseRouting();
 
 app.UseAuthorization();

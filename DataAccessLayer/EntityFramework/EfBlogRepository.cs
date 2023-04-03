@@ -15,10 +15,10 @@ namespace DataAccessLayer.EntityFramework
     {
         public List<Blog> GetListWithCategory()
         {
-            using(var db=new Context())
-            {
-                return db.Blogs.Include(x=>x.Category).ToList();  
-            }
-        }
+			using (var db = new Context())
+			{
+				return db.Blogs.Include(x => x.Category).ToList();
+			}
+		}
     }
 }
