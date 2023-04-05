@@ -517,6 +517,50 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\css\\font-awesome.css",
+      "PackagePath": "staticwebassets\\weberror\\css\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\css\\style.css",
+      "PackagePath": "staticwebassets\\weberror\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\weberror\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\weberror\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\weberror\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\weberror\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\weberror\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\weberror\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\images\\banner1.jpg",
+      "PackagePath": "staticwebassets\\weberror\\images\\banner1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\index.html",
+      "PackagePath": "staticwebassets\\weberror\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\weberror\\w3layouts-license.txt",
+      "PackagePath": "staticwebassets\\weberror\\w3layouts-license.txt"
+    },
+    {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.WebApplication1.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
