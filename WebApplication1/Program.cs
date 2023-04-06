@@ -1,12 +1,38 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddMvc(config =>
+{
+    var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+
+    config.Filters.Add(new AuthorizeFilter(policy));
+
+});
+
+builder.Services.AddSession();
+
+builder.Services.AddMvc();
+
+builder.Services.AddAuthentication(
+
+    CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x=>
+    {
+        x.LoginPath = "/Login/Index/";
+
+    });
+
+
+
 /*
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Context>(options =>
 options.UseNpgsql(builder.Configuration.GetConnectionString("Context")));*/
@@ -28,8 +54,13 @@ if (!app.Environment.IsDevelopment())
 app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1","?code={0}");
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
+app.UseAuthentication();
 AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
+
+app.UseSession();
+
 app.UseRouting();
 
 app.UseAuthorization();

@@ -77,12 +77,16 @@
                             <img src="~/CoreBlogTema/web/images/banner1.jpg" class="img-fluid" alt="">
                         </div>
 
-                      @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
+                        <h4>Sign up to our newsletter</h4>
+
+                        @await Html.PartialAsync("~/Views/NewsLetter/SubscribeMail.cshtml")
+
+                        @await Html.PartialAsync("~/Views/About/SocialMediaAbout.cshtml")
          
                         @await Component.InvokeAsync("CategoryList")
 
                  
-                        @await Component.InvokeAsync("WriterLastBlog");
+                        @await Component.InvokeAsync("WriterLastBlog")
 
                         <div class="single-gd my-5 tech-btm">
                             <h4>Our Progress</h4>
