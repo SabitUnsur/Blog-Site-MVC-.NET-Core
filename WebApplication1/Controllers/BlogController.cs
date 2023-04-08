@@ -1,9 +1,11 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebApplication1.Controllers
 {
+	[AllowAnonymous]
 	public class BlogController : Controller
 	{
 		BlogManager blogManager=new BlogManager(new EfBlogRepository());
@@ -19,5 +21,7 @@ namespace WebApplication1.Controllers
             ViewBag.blogID = BlogId;
             return View(values);
 		}
+
+
     }
 }
