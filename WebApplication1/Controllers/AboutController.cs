@@ -9,7 +9,7 @@ namespace WebApplication1.Controllers
 		AboutManager _aboutManager = new AboutManager(new EfAboutRepository());
 		public IActionResult Index()
 		{
-            var values = _aboutManager.GetAboutList();
+            var values = _aboutManager.GetListAll();
             return View(values);
 		}
 

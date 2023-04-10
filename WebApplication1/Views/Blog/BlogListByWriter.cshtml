@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EntityLayer.Concrete.Blog>
+
+@{
+    ViewData["Title"] = "BlogListByWriter";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+} 
+
+<h1>Writer's Blogs</h1>
+<table class="table table-bordered">
+    <tr>
+
+        <th>Blog ID</th>
+        <th>Blog Title</th>
+        <th>Create Date</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Delete</th>
+        <th>Edit</th>
+  
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <th>@item.BlogID</th>
+            <td>@item.BlogTitle</td>
+            <td>@(((DateTime)item.BlogCreateDate).ToString("dd-MMM-yyyy"))</td>
+            <td>@item.Category.CategoryName</td>
+            
+            @if(item.BlogStatus)
+            {
+
+                <td><span class="badge badge-success">True</span></td>
+            }
+
+            else
+            {
+                <td><span class="badge badge-secondary">False</span></td>
+            }
+
+
+            <td><a href="/Blog/DeleteBlog?blogID=@item.BlogID" onclick="return confirm('Are you sure to delete?')" class="btn btn-danger">Delete</a></td>
+            <td><a href="/Blog/EditBlog?blogID=@item.BlogID" class="btn btn-warning">Edit</a></td>
+
+        </tr>
+    }
+
+</table>
+
+<a href="/Blog/BlogAdd/" class="btn btn-primary">Create New Blog</a>

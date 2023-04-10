@@ -11,9 +11,10 @@ namespace WebApplication1.Controllers
         CategoryManager categoryManager=new CategoryManager(new EfCategoryRepository());
         public IActionResult Index()
         {
-            var values=categoryManager.GetCategoryList();
+            var values=categoryManager.GetListAll();
             return View(values);
         }
 
     }
 }
+ 

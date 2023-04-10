@@ -1,5 +1,6 @@
 ﻿using EntityLayer.Concrete;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Linq;

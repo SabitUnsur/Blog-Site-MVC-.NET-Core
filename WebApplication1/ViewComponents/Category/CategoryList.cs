@@ -10,7 +10,7 @@ namespace WebApplication1.ViewComponents.Category
         CategoryManager _categoryManager = new CategoryManager(new EfCategoryRepository());
         public IViewComponentResult Invoke()
         {
-            var values = _categoryManager.GetCategoryList();
+            var values = _categoryManager.GetListAll();
             return View(values);
         }
     }

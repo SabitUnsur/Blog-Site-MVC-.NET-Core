@@ -57,7 +57,9 @@ app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 app.UseAuthentication();
+
 AppContext.SetSwitch("Npgsql.DisableDateTimeInfinityConversions", true);
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 app.UseSession();
 

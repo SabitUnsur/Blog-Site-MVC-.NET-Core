@@ -821,6 +821,10 @@
       "PackagePath": "staticwebassets\\writer\\assets\\images\\logo-mini.svg"
     },
     {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\writer\\assets\\images\\logo.png",
+      "PackagePath": "staticwebassets\\writer\\assets\\images\\logo.png"
+    },
+    {
       "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\writer\\assets\\images\\logo.svg",
       "PackagePath": "staticwebassets\\writer\\assets\\images\\logo.svg"
     },

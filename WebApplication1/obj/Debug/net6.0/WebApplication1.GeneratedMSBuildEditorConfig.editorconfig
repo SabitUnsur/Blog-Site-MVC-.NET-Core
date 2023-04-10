@@ -24,8 +24,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWJvdXRcU29jaWFsTWVkaWFBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Blog/BlogAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Blog/BlogListByWriter.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nTGlzdEJ5V3JpdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Blog/BlogReadAll.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xCbG9nUmVhZEFsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Blog/EditBlog.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xFZGl0QmxvZy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Blog/Index.cshtml]
@@ -42,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Contact/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Dashboard/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/ErrorPage/Error1.cshtml]
@@ -72,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ0xhc3QzUG9zdFxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Shared/Components/BlogListDashboard/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQmxvZ0xpc3REYXNoYm9hcmRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Shared/Components/CategoryList/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2F0ZWdvcnlMaXN0XERlZmF1bHQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -82,6 +102,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Shared/Components/WriterLastBlog/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyTGFzdEJsb2dcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Shared/Components/WriterMessageNotification/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyTWVzc2FnZU5vdGlmaWNhdGlvblxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Shared/Components/WriterNotifications/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV3JpdGVyTm90aWZpY2F0aW9uc1xEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Shared/Error.cshtml]
@@ -118,6 +146,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Writer/Test.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXFRlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Writer/WriterFooterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXFdyaXRlckZvb3RlclBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Writer/WriterNavbarPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV3JpdGVyXFdyaXRlck5hdmJhclBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/_ViewImports.cshtml]

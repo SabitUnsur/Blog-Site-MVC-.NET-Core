@@ -40,7 +40,7 @@
                                 <h5 class="card-title">
                                     <a href="/Blog/BlogReadAll?BlogId=@blog.BlogID">@blog.BlogTitle</a>
                                 </h5>
-                                <p class="card-text mb-3">@blog.BlogContent.Substring(0,blog.BlogContent.Substring(0,130).LastIndexOf(" "))...  </p>
+                                <p class="card-text mb-3">@((blog.BlogContent.Length>130 ? blog.BlogContent.Substring(0,130)+ "..." : blog.BlogContent))  </p>
                                 <a href="/Blog/BlogReadAll?BlogId=@blog.BlogID" class="btn btn-primary read-m">Read More</a>
                             </div>
                         </div>

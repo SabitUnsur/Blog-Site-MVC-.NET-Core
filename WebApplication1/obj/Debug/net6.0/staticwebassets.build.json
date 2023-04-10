@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NSZ4vn+Eup4yg0ylrqzzl38dvON46m4ai3mlWMZ+0QM=",
+  "Hash": "wcLyvLMSjtvBPVTS1TfaIvWHRQ99GMMq9/KHKTOJJqY=",
   "Source": "WebApplication1",
   "BasePath": "_content/WebApplication1",
   "Mode": "Default",
@@ -3415,6 +3415,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\writer\\assets\\images\\favicon.png"
+    },
+    {
+      "Identity": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\writer\\assets\\images\\logo.png",
+      "SourceId": "WebApplication1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\",
+      "BasePath": "_content/WebApplication1",
+      "RelativePath": "writer/assets/images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\writer\\assets\\images\\logo.png"
     },
     {
       "Identity": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\writer\\assets\\images\\logo.svg",
