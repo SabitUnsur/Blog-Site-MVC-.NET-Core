@@ -277,6 +277,18 @@
       "PackagePath": "staticwebassets\\CoreBlogTema\\web\\webfonts\\fa-solid-900.woff2"
     },
     {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\WriterImageFiles\\04f417b1-0b6f-407a-b47f-c053f1f4a4c5.jpeg",
+      "PackagePath": "staticwebassets\\WriterImageFiles\\04f417b1-0b6f-407a-b47f-c053f1f4a4c5.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\WriterImageFiles\\53549508-22b7-47c9-b3cc-d607357633a6.jpeg",
+      "PackagePath": "staticwebassets\\WriterImageFiles\\53549508-22b7-47c9-b3cc-d607357633a6.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\WriterImageFiles\\a9028ccd-2baf-457c-bf68-6f92e5a4edfc.jpeg",
+      "PackagePath": "staticwebassets\\WriterImageFiles\\a9028ccd-2baf-457c-bf68-6f92e5a4edfc.jpeg"
+    },
+    {
       "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

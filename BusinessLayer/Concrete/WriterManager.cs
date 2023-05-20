@@ -18,9 +18,34 @@ namespace BusinessLayer.Concrete
 			_writerDal = writerDal;
 		}
 
-		public void AddWriter(Writer writer)
-		{
-			_writerDal.Add(writer);
-		}
-	}
+        public void Add(Writer entity)
+        {
+            _writerDal.Add(entity);
+        }
+
+        public void Delete(Writer entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Writer GetByID(int entityID)
+        {
+            return _writerDal.GetByID(entityID);
+        }
+
+        public List<Writer> GetListAll()
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Writer> GetWriterByID(int ID)
+        {
+            return _writerDal.GetAllList(x => x.WriterID == ID);
+        }
+
+        public void Update(Writer entity)
+        {
+            _writerDal.Update(entity);
+        }
+    }
 }

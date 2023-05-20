@@ -23,7 +23,10 @@ namespace BusinessLayer.ValidationRules
 
 			RuleFor(x => x.WriterName).MinimumLength(2).WithMessage("Please entry min 2 characters");
 			RuleFor(x => x.WriterName).MaximumLength(50).WithMessage("Please entry max 50 characters");
+            RuleFor(x => x.ConfirmWriterPassword).NotEmpty().WithMessage("Confirm Password is required.") // Şifre onaylama alanının boş olmaması gerektiği kuralları
+            .Equal(x => x.WriterPassword).WithMessage("Passwords do not match."); // Şifre onaylama alanının, şifre alanı ile aynı olması gerektiği kuralları
+        }
 
-		}
     }
+    
 }

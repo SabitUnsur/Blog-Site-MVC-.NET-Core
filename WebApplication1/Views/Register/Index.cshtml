@@ -44,6 +44,7 @@
 						<div class="form-group col-md-6">
 							<label for="exampleInputPassword2 mb-2">Confirm Password</label>
 							<input type="password" class="form-control" id="password2" name="ConfirmWriterPassword" placeholder="" required="">
+							@Html.ValidationMessageFor(x=>x.ConfirmWriterPassword,"",new {@class="text-danger"})
 						</div>
 
 

@@ -19,10 +19,29 @@ namespace DataAccessLayer.Concrete
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Writer> Writers { get; set; }
         public DbSet<NewsLetter> NewsLetters { get; set; }
+        public DbSet<Rate> Rates { get; set; }
+        public DbSet<Notification> Notifications  { get; set; }
+        public DbSet<Message> Messages { get; set; }
+        public DbSet<Message2> Message2s { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=localhost;Database=CoreBlogDB;Username=postgres;Password=123");
+        }
+
+        // 2 relations on one table
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Message2>().HasOne(x => x.SenderUser).
+                WithMany(y => y.WriterSender).
+                HasForeignKey(z => z.SenderID).
+                OnDelete(DeleteBehavior.ClientSetNull);
+
+            modelBuilder.Entity<Message2>().HasOne(x => x.ReceiverUser).
+                WithMany(y => y.WriterReceiver).
+                HasForeignKey(z => z.ReceiverID).
+                OnDelete(DeleteBehavior.ClientSetNull);
         }
 
 

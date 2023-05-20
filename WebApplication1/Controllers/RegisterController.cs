@@ -29,7 +29,7 @@ namespace WebApplication1.Controllers
 				writer.WriterStatus = true;
 				writer.WriterAbout = "Test";
 
-				_writerManager.AddWriter(writer);
+				_writerManager.Add(writer);
 
 				return RedirectToAction("Index", "Blog");
 			}

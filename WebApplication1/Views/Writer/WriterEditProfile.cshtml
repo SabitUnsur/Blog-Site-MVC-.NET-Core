@@ -1,0 +1,66 @@
+﻿@model EntityLayer.Concrete.Writer
+@{
+    ViewData["Title"] = "WriterEditProfile";
+    Layout = "~/Views/Shared/WriterLayout.cshtml";
+}
+
+<h1>WriterEditProfile</h1>
+
+@using(Html.BeginForm("WriterEditProfile","Writer",FormMethod.Post))
+{
+    <div class="col-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Edit Profile</h4>
+                <br/>
+                @Html.HiddenFor(x=>x.WriterID, new {@class="form-control"})
+                <form class="forms-sample">
+                    <div class="form-group">
+                        <label for="exampleInputName1">Writer Name</label>
+                        @Html.TextBoxFor(x=>x.WriterName, new {@class="form-control"})
+                        @Html.ValidationMessageFor(x=>x.WriterName)
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail3">Email</label>
+                        @Html.TextBoxFor(x=>x.WriterMail, new {@class="form-control"})
+                        @Html.ValidationMessageFor(x=>x.WriterMail)
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword4" name="WriterPassword" placeholder="Password">
+                        @Html.ValidationMessageFor(x=>x.WriterPassword)
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPassword4">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword4" name="ConfirmWriterPassword" placeholder="Password">
+                        @Html.ValidationMessageFor(x=>x.ConfirmWriterPassword,"",new {@class="text-danger"})
+                    </div>
+              
+                    <div class="form-group">
+                        <label>Image upload</label>
+                        <input type="file" name="img[]" class="file-upload-default">
+                        <div class="input-group col-xs-12">
+                            @*<input type="text" class="form-control file-upload-info" disabled  placeholder="Upload Image">*@
+                           @Html.TextBoxFor(x=>x.WriterImage, new {@class="form-control"})
+                            @*@Html.ValidationMessageFor(x=>x.WriterImage)*@
+                            <span class="input-group-append">
+                                <button class="file-upload-browse btn btn-gradient-primary" type="button">Upload</button>
+                            </span>
+                        </div>
+                    </div>
+              
+                    <div class="form-group">
+                        <label for="exampleTextarea1">About</label>
+                        @Html.TextAreaFor(x=>x.WriterAbout,10,3, new {@class="form-control"})
+
+                    </div>
+                    <button type="submit" class="btn btn-gradient-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+}
+
