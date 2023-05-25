@@ -9996,9 +9996,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
-      "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\DailyBlogUI.csproj",
+      "projectName": "DailyBlogUI",
+      "projectPath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\DailyBlogUI.csproj",
       "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",

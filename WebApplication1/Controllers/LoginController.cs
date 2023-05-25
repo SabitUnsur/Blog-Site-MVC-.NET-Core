@@ -36,7 +36,7 @@ namespace WebApplication1.Controllers
 
                 await HttpContext.SignInAsync(userPrincipal);
 
-                return RedirectToAction("Index", "Writer");
+                return RedirectToAction("Index", "Dashboard");
             }
             else
             {

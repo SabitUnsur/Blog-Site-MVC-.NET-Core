@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k43Dw+SyVSEujcxvS7hWnewguz5KmOGaE7tJanOYQQE0XUK40R4mMRcoqGYMjZKBuvpHh6POsKnhuqzDAZ3a6A==",
+  "dgSpecHash": "5+H27dHp9xkJyxylBJ0ifMAwCAaNMULhORc3/J2KxWqRiPUbjh7wDKQcgC/NNl5jgH+0vnpCruCHJxmyWrYjsg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\DailyBlogUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
     "C:\\Users\\sabit\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.3.0\\fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
