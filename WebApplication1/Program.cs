@@ -19,19 +19,18 @@ builder.Services.AddMvc(config =>
 
 });
 
+
 builder.Services.AddSession();
 
 builder.Services.AddMvc();
 
 builder.Services.AddAuthentication(
 
-    CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x=>
+    CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(x =>
     {
         x.LoginPath = "/Login/Index/";
 
     });
-
-
 
 /*
 builder.Services.AddEntityFrameworkNpgsql().AddDbContext<Context>(options =>
@@ -43,6 +42,7 @@ builder.Services.AddEntityFrameworkNpgsql()
 
 var app = builder.Build();
 
+
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
@@ -51,7 +51,7 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1","?code={0}");
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code={0}");
 
 app.UseHttpsRedirection();
 
@@ -66,6 +66,14 @@ app.UseSession();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+                name: "areas",
+                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+              );
+});
 
 app.MapControllerRoute(
     name: "default",

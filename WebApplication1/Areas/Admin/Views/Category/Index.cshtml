@@ -1,0 +1,60 @@
+﻿@model IPagedList<EntityLayer.Concrete.Category>
+@using X.PagedList
+@using X.PagedList.Mvc.Core
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Categories</h1>
+
+<br />
+<table class="table table-bordered">
+
+    <tr>
+        <th> # </th>
+        <th> Category Name </th>
+        <th> Passive </th>
+        <th> Activate </th>
+        <th> Edit </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryID</td>
+            <td>@item.CategoryName</td>
+            <td><a href="/Admin/Category/DeleteCategory?categoryID=@item.CategoryID" id="DeleteBtn" class="btn btn-info"
+                   onclick="return showConfirmationDialog(event, 'Are you sure to delete?');">Passive</a>
+            </td>
+            <td><a href="#" class="btn btn-warning">Activate</a></td>
+            <td><a href="#" class="btn btn-success">Edit</a></td>
+        </tr>
+    }
+</table>
+
+<a href="/Admin/Category/AddCategory/" class="btn btn-primary"> Add Category</a>
+<br />
+<br />
+@Html.PagedListPager((IPagedList)Model,page=>Url.Action("Index",new {page}))
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script>
+    function showConfirmationDialog(event, message) {
+        event.preventDefault();
+        swal({
+            title: "Are you sure?",
+            text: message,
+            icon: "warning",
+            buttons: ["Cancel", "Delete"],
+            dangerMode: true,
+        }).then((willDelete) => {
+            if (willDelete) {
+                window.location.href = event.target.href;
+            }
+        });
+    }
+</script>
+
+
+
