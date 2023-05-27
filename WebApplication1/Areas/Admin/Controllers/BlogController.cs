@@ -1,5 +1,4 @@
 ﻿using BusinessLayer.Abstract;
-using DailyBlogUI.Areas.Admin.Models;
 using DataAccessLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
 
