@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication2\\WebApplication2.csproj",
-      "projectName": "WebApplication2",
-      "projectPath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication2\\WebApplication2.csproj",
+      "projectUniqueName": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\BlogAPIDemo\\BlogAPIDemo.csproj",
+      "projectName": "BlogAPIDemo",
+      "projectPath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\BlogAPIDemo\\BlogAPIDemo.csproj",
       "packagesPath": "C:\\Users\\sabit\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication2\\obj\\",
+      "outputPath": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\BlogAPIDemo\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\sabit\\AppData\\Roaming\\NuGet\\NuGet.Config",

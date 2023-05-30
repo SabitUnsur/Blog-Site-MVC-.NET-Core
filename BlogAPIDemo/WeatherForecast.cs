@@ -1,4 +1,4 @@
-namespace WebApplication2
+namespace BlogAPIDemo
 {
     public class WeatherForecast
     {

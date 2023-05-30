@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessLayer", "BusinessLa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreLayer", "CoreLayer\CoreLayer.csproj", "{70086962-E4D4-479A-A1F5-490E7F396F85}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogAPIDemo", "BlogAPIDemo\BlogAPIDemo.csproj", "{08350349-A209-4CB5-8B87-98E9B909486A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{70086962-E4D4-479A-A1F5-490E7F396F85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70086962-E4D4-479A-A1F5-490E7F396F85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70086962-E4D4-479A-A1F5-490E7F396F85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08350349-A209-4CB5-8B87-98E9B909486A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08350349-A209-4CB5-8B87-98E9B909486A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08350349-A209-4CB5-8B87-98E9B909486A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08350349-A209-4CB5-8B87-98E9B909486A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

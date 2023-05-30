@@ -1,0 +1,156 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Writer Ajax Operations</h1>
+<br/>
+
+<button type="button" id="btngetlist" class="btn btn-outline-primary">Writer List</button>
+<button type="button" id="btngetbyid" class="btn btn-outline-success">Get Writer</button>
+<button type="button" id="btnaddwriter" class="btn btn-outline-info">Add Writer</button>
+<button type="button" id="btndeletewriter" class="btn btn-outline-danger">Delete Writer</button>
+<button type="button" id="btnupdatewriter" class="btn btn-outline-warning">Update Writer</button>
+
+<br />
+<br /> 
+
+<div id="writerlist">
+    Buraya yazarlar gelecek
+</div
+
+<br/>
+<br/> 
+
+<div id="writerget">
+    Buraya 1 yazar gelecek
+</div>
+
+<div>
+    <input type="text" id="writerID" placeholder="Writer ID" class="form-control"/>
+</div>
+
+<br/>
+
+<div>
+
+     <input type="text" id="writerid" placeholder="Writer ID" class="form-control"/>
+     <input type="text" id="writername" placeholder="WriterName" class="form-control"/>
+</div>
+
+<br/>
+
+<div>
+
+     <input type="text" id="deletewriterid" placeholder="Writer ID" class="form-control"/>
+ 
+</div>
+
+<br/>
+
+<input type="text" id="updatewriterid" placeholder="Writer ID" class="form-control" />
+<input type="text" id="updatewritername" placeholder="Writer Name" class="form-control" />
+
+@section scripts{
+    <script>
+        $("#btngetlist").click(function(){
+            $.ajax({
+
+                contentType:"application/json",
+                dataType:"json",
+                type:"Get",
+                url:"/Admin/Writer/WriterList/",
+                success:function(func){
+                    let w=jQuery.parseJSON(func);
+                    console.log(w);
+
+                    let tablehtml = "<table class='table table-bordered'> <tr> <th> Writer ID </th>  <th> Writer Name </th> </tr>";
+
+                    $.each(w,(index,value)=>{
+                        tablehtml += `<tr> <td> ${value.Id} </td> <td> ${value.Name} </td> </tr>`
+                    });
+
+                    tablehtml += "</table>";
+                    $("#writerlist").html(tablehtml);
+
+                }
+            });
+        });
+
+        $("#btngetbyid").click(x=>{
+            let id=$("#writerID").val();
+            $.ajax({
+                 contentType:"application/json",
+                dataType:"json",
+                type:"Get",
+                url:"/Admin/Writer/GetWriterByID/",
+                data:{writerID:id},
+                success: function(func){
+                    let w=jQuery.parseJSON(func);
+                    console.log(w);
+
+                     let getvalue = '<table class=table table-bordered> <tr> <th> Writer ID </th>  <th> Writer Name </th> </tr>  <tr> <td> ${w.Id} </td> <td> ${w.Name} </td> </tr> </table>' ;
+
+                     $("#writerget").html(getvalue)
+
+
+                }
+
+            });
+
+        });
+
+        $("#btnaddwriter").click(function(){
+            let writer= {
+                Id: $("#writerid").val(),
+                Name: $("#writername").val()
+            };
+
+            $.ajax({
+                type: "post",
+                url:"/Admin/Writer/AddWriter/",
+                data:writer,
+                success:function(func){
+                    let result=jQuery.parseJSON(func);
+                    alert("Successfully added!");
+                }
+
+            });
+
+        });
+
+        $("#btndeletewriter").click(x=>{
+            let id = $("#deletewriterid").val();
+
+            $.ajax({
+                url:"/Admin/Writer/DeleteWriter/" + id,
+                type:"post",
+                dataType:"json",
+               success:function(func){
+                    alert("Successfully deleted!");
+                }
+            });
+        });
+
+        $("#btnupdatewriter").click(function(){
+            let writer= {
+                Id: $("#updatewriterid").val(),
+                Name: $("#updatewritername").val()
+            };
+
+            $.ajax({
+                type:"post",
+                url:"/Admin/Writer/UpdateWriter/",
+                data:writer,
+                success:function(func) {
+                    alert("Updated!");
+                }
+            });
+
+        });
+
+
+    </script>
+}
+
