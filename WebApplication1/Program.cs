@@ -1,10 +1,13 @@
 using BusinessLayer.Abstract;
 using BusinessLayer.Concrete;
 using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.EntityFrameworkCore;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +26,15 @@ builder.Services.AddMvc(config =>
 builder.Services.AddSession();
 
 builder.Services.AddMvc();
+
+builder.Services.AddIdentity<AppUser, AppRole>()
+
+    /* x.Password.RequireUppercase = false;
+     x.Password.RequireNonAlphanumeric = false;*/ //Identity þifre girme zorunluluk kurallarý icin
+
+    .AddEntityFrameworkStores<Context>()
+    .AddDefaultTokenProviders();
+
 
 builder.Services.AddAuthentication(
 

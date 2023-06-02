@@ -12,5 +12,12 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfNewsLetterRepository : GenericRepository<NewsLetter, Context>, INewsLetterDal
     {
+        public bool IsEmailSubscribed(NewsLetter email)
+        {
+            using (var db = new Context())
+            {
+                return db.NewsLetters.Select(x=>x.Mail==email.Mail).Any();
+            }
+        }
     }
 }

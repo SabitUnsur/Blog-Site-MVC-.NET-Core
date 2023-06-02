@@ -10,6 +10,7 @@ namespace BusinessLayer.Abstract
     public interface INewsLetterService
     {
         void AddNewsLetter(NewsLetter newsLetter);
+        bool IsEmailSubscribed(NewsLetter email);
 
     }
 }

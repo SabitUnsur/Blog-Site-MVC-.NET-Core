@@ -28,7 +28,7 @@ namespace WebApplication1.Controllers
             //Bu sayede DateTime değerleri yerel saate dönüştürülebilir ya da diğer zaman dilimlerine göre ayarlanabilir.
             //Bu, farklı bilgisayarlar arasında yapılan veri paylaşımı veya veritabanı işlemlerinde çok yararlıdır.
 
-            comment.CommentDate = DateTime.SpecifyKind(DateTime.Parse(DateTime.UtcNow.ToString()), DateTimeKind.Utc);
+            comment.CommentDate = DateTime.SpecifyKind(DateTime.Parse(DateTime.Now.ToString()), DateTimeKind.Local);
 
             comment.CommentStatus = true;
             comment.BlogID = 3;

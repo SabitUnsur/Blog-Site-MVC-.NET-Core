@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstract
 {
     public interface INewsLetterDal : IGenericDal<NewsLetter>
     {
+        bool IsEmailSubscribed(NewsLetter email);
     }
 }

@@ -1,5 +1,6 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,13 @@ namespace BusinessLayer.Concrete
         public void AddNewsLetter(NewsLetter newsLetter)
         {
             _newsLetterDal.Add(newsLetter);
+        }
+
+        public bool IsEmailSubscribed(NewsLetter email)
+        {
+            bool isSubscribed = _newsLetterDal.IsEmailSubscribed(email); 
+
+            return isSubscribed;
         }
     }
 }
