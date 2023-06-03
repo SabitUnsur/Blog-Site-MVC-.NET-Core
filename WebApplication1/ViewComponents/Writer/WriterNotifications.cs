@@ -10,7 +10,7 @@ namespace WebApplication1.ViewComponents.Writer
 
         public IViewComponentResult Invoke()
         {
-            var values = _notificationManager.GetListAll();
+            var values = _notificationManager.GetListAll().ToList();
             return View(values);
         }
     }

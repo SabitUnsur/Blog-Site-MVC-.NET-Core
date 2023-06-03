@@ -12,7 +12,7 @@ namespace WebApplication1.Controllers
     public class LoginController : Controller
     {
         private readonly SignInManager<AppUser> _signInManager;
-
+      
         public LoginController(SignInManager<AppUser> signInManager)
         {
             _signInManager = signInManager;
