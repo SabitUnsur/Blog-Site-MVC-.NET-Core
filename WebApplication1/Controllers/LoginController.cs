@@ -46,6 +46,13 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+
+        public async Task<IActionResult> LogOut()
+        {
+            await _signInManager.SignOutAsync();
+            return RedirectToAction("Index", "Login");
+        }
+
         //[HttpPost]
         //[AllowAnonymous]
         /*public async Task<IActionResult> Index(Writer writer)

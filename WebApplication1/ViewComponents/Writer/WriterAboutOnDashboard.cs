@@ -26,7 +26,6 @@ namespace WebApplication1.ViewComponents.Writer
             ViewBag.User = userName;
 
             var userMail = db.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
-
             var writerID = db.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID).FirstOrDefault();
             var values = writerManager.GetWriterByID(writerID);
             return View(values);

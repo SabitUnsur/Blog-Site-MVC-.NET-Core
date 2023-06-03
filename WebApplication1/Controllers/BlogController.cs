@@ -34,8 +34,10 @@ namespace WebApplication1.Controllers
 
         public IActionResult BlogListByWriter()
         {
-            var userMail = User.Identity.Name;
-            var writerID = db.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID).FirstOrDefault();
+            var userName = User.Identity.Name;
+            var userMail = db.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();        
+            var writerID = db.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID).FirstOrDefault();      
+
             var values = blogManager.GetListWithCategoryByWriter(writerID);
             return View(values);
         }
@@ -60,7 +62,9 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult BlogAdd(Blog blog)
         {
-            var userMail = User.Identity.Name;
+
+            var userName = User.Identity.Name;
+            var userMail = db.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
             var writerID = db.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID).FirstOrDefault();
 
             BlogValidator validation = new BlogValidator();
@@ -69,7 +73,7 @@ namespace WebApplication1.Controllers
             if (validationResult.IsValid)
             {
                 blog.BlogStatus = true;
-                blog.BlogCreateDate = DateTime.SpecifyKind(DateTime.Parse(DateTime.UtcNow.ToString()), DateTimeKind.Utc);
+                blog.BlogCreateDate = DateTime.SpecifyKind(DateTime.Parse(DateTime.Now.ToString()), DateTimeKind.Local);
                 blog.WriterID = writerID;
                 blogManager.Add(blog);
 
@@ -117,7 +121,9 @@ namespace WebApplication1.Controllers
         [HttpPost]
         public IActionResult EditBlog(Blog blog)
         {
-            var userMail = User.Identity.Name;
+
+            var userName = User.Identity.Name;
+            var userMail = db.Users.Where(x => x.UserName == userName).Select(y => y.Email).FirstOrDefault();
             var writerID = db.Writers.Where(x => x.WriterMail == userMail).Select(y => y.WriterID).FirstOrDefault();
             blog.WriterID= writerID;
             blogManager.Update(blog);

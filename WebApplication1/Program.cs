@@ -27,6 +27,17 @@ builder.Services.AddSession();
 
 builder.Services.AddMvc();
 
+builder.Services.ConfigureApplicationCookie(opts =>
+{
+    //Cookie settings
+    opts.Cookie.HttpOnly = true;
+    opts.ExpireTimeSpan = TimeSpan.FromMinutes(100);
+    opts.AccessDeniedPath = new PathString("/Login/AccessDenied/");
+    opts.LoginPath = "/Login/Index/";
+    opts.SlidingExpiration = true;
+});
+
+
 builder.Services.AddIdentity<AppUser, AppRole>()
 
     /* x.Password.RequireUppercase = false;
