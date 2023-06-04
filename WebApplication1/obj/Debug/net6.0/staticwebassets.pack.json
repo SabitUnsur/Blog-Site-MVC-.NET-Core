@@ -5,6 +5,30 @@
       "PackagePath": "staticwebassets\\DailyBlogUI.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\2021-403forbidden\\403forbidden\\README.markdown",
+      "PackagePath": "staticwebassets\\2021-403forbidden\\403forbidden\\README.markdown"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\2021-403forbidden\\403forbidden\\dist\\index.html",
+      "PackagePath": "staticwebassets\\2021-403forbidden\\403forbidden\\dist\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\2021-403forbidden\\403forbidden\\dist\\style.css",
+      "PackagePath": "staticwebassets\\2021-403forbidden\\403forbidden\\dist\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\2021-403forbidden\\403forbidden\\license.txt",
+      "PackagePath": "staticwebassets\\2021-403forbidden\\403forbidden\\license.txt"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\2021-403forbidden\\403forbidden\\src\\index.html",
+      "PackagePath": "staticwebassets\\2021-403forbidden\\403forbidden\\src\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\2021-403forbidden\\403forbidden\\src\\style.css",
+      "PackagePath": "staticwebassets\\2021-403forbidden\\403forbidden\\src\\style.css"
+    },
+    {
       "Id": "C:\\Users\\sabit\\source\\repos\\WebApplication1\\WebApplication1\\wwwroot\\CoreBlogTema\\web\\about.html",
       "PackagePath": "staticwebassets\\CoreBlogTema\\web\\about.html"
     },

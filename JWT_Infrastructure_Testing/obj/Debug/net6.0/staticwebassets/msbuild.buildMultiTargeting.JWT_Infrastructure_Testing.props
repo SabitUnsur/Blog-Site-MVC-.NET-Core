@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\JWT_Infrastructure_Testing.props" />
+</Project>

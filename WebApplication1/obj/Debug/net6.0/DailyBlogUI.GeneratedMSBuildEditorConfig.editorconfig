@@ -16,8 +16,44 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\sabit\source\repos\WebApplication1\WebApplication1
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminBlog/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5CbG9nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminComment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Db21tZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminMessage/ComposeMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5NZXNzYWdlXENvbXBvc2VNZXNzYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminMessage/InBox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5NZXNzYWdlXEluQm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminMessage/SendBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5NZXNzYWdlXFNlbmRCb3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminRole/AddRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xlXEFkZFJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminRole/AssignRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xlXEFzc2lnblJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminRole/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xlXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminRole/UpdateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xlXFVwZGF0ZVJvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/AdminRole/UserRoleList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5Sb2xlXFVzZXJSb2xlTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/Blog/BlogTiteListExcel.cshtml]
@@ -54,6 +90,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/Writer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcV3JpdGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/About/Index.cshtml]
@@ -118,6 +158,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Login/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjZXNzRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/sabit/source/repos/WebApplication1/WebApplication1/Views/Login/Index.cshtml]

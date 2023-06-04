@@ -53,6 +53,15 @@ namespace WebApplication1.Controllers
             return RedirectToAction("Index", "Login");
         }
 
+
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
+
+
+
         //[HttpPost]
         //[AllowAnonymous]
         /*public async Task<IActionResult> Index(Writer writer)
